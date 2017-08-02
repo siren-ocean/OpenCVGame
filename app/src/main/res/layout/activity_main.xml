@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_detection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onClick"
+            android:paddingLeft="4dp"
+            android:text="人脸检测" />
+
+        <RadioButton
+            android:id="@+id/rb_ashing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingLeft="4dp"
+            android:text="灰化" />
+
+        <RadioButton
+            android:id="@+id/rb_canny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingLeft="4dp"
+            android:text="边缘检测" />
+
+        <RadioButton
+            android:id="@+id/rb_luv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:paddingLeft="4dp"
+            android:text="色调" />
+    </RadioGroup>
+</RelativeLayout>
