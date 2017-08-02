@@ -24,7 +24,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
-public class MainActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2, View.OnClickListener {
+public class CameraActivity extends Activity implements CameraBridgeViewBase.CvCameraViewListener2, View.OnClickListener {
 
     private static final Scalar FACE_RECT_COLOR = new Scalar(0, 255, 0, 255);
     private CameraBridgeViewBase mCameraView;
